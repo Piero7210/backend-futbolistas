@@ -17,14 +17,16 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 
    ```bash
    git clone https://github.com/tu-usuario/backend-futbolistas.git
-
-   spring.datasource.url=jdbc:mysql://localhost:3306/nombre_base_datos
+   ```
+   
+2. Configura la conexión a la base de datos MySQL en el archivo application.properties. Aquí hay un ejemplo de configuración:
+   ```bash
+     spring.datasource.url=jdbc:mysql://localhost:3306/nombre_base_datos
     spring.datasource.username=usuario_mysql
     spring.datasource.password=contraseña_mysql
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.jpa.hibernate.ddl-auto=update
    ```
-
 La aplicación estará disponible en http://localhost:8080/futbol-api/
 
 Uso de la API
